@@ -16,9 +16,11 @@ public class Main {
         return a;
     }
     public static void main(String[] args) {
+
+        System.out.println(System.currentTimeMillis());
         int []arr = new int[100000];
         for (int i = 0; i < 100000; i++) {
-            arr[i] = (int) (Math.random()*1000);
+            arr[i] = (int) (Math.random()*100000) + 1;
 
         }
         LocalTime start = LocalTime.now();
